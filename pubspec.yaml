@@ -1,0 +1,32 @@
+name: map_picker_india
+description: "A Flutter package that simplifies location selection on maps, regardless of device type."
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+platforms:
+  android:
+  ios:
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^6.1.2
+  flutter_hms_gms_availability: ^3.10.0
+  huawei_map: ^6.11.2+304
+  google_api_headers: ^4.2.6
+  flutter_google_maps_webservices: ^1.1.1
+  google_maps_flutter: ^2.10.0
+  geolocator: ^13.0.2
+  uuid: ^4.5.1
+  http: ^1.2.2
+  location: ^7.0.1
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
