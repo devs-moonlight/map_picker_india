@@ -1,6 +1,6 @@
 name: map_picker_india
 description: "A Flutter package that simplifies location selection on maps, regardless of device type."
-version: 0.1.0
+version: 0.1.1
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
