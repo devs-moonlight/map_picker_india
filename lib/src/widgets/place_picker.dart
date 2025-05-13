@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:io' show Platform;
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -907,31 +906,6 @@ class PlacePickerState extends State<PlacePicker>
   }
 
   Future<dynamic> _showLocationDisabledAlertDialog(BuildContext context) {
-    if (Platform.isIOS) {
-      return showCupertinoDialog(
-          context: context,
-          builder: (BuildContext ctx) {
-            return CupertinoAlertDialog(
-              title: const Text("Location is disabled"),
-              content: const Text(
-                  "To use location, go to your Settings App > Privacy > Location Services."),
-              actions: [
-                CupertinoDialogAction(
-                  child: const Text("Cancel"),
-                  onPressed: () {
-                    Navigator.of(context).pop(false);
-                  },
-                ),
-                CupertinoDialogAction(
-                  child: const Text("Ok"),
-                  onPressed: () {
-                    Navigator.of(context).pop(true);
-                  },
-                )
-              ],
-            );
-          });
-    } else {
       return showDialog(
         context: context,
         builder: (BuildContext ctx) {
@@ -958,7 +932,6 @@ class PlacePickerState extends State<PlacePicker>
           );
         },
       );
-    }
   }
 }
 

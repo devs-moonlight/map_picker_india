@@ -9,6 +9,7 @@ environment:
 platforms:
   android:
   ios:
+  web:
 
 dependencies:
   flutter:
