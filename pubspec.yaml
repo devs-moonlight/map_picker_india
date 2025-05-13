@@ -14,9 +14,8 @@ platforms:
 dependencies:
   flutter:
     sdk: flutter
-
+  google_maps_flutter_web: ^0.5.12
   google_maps_flutter: ^2.5.3
-  google_maps_flutter_web: ^0.5.4+3
   geolocator: ^11.1.0
   uuid: ^4.5.1
 
